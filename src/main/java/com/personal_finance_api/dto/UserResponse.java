@@ -1,18 +1,15 @@
 package com.personal_finance_api.dto;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserRequest {
+public class UserResponse {
 
-    @NotBlank
+    private Integer id;
     private String name;
-
-    @NotBlank
     private String email;
 }
