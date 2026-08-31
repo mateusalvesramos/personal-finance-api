@@ -18,13 +18,15 @@ public class UserService {
     private final IUserRepository userRepository;
 
     public List<UserResponse> findAllUsers() {
+
         return userRepository.findAll()
                 .stream()
                 .map(user -> new UserResponse(user.getId(), user.getName(), user.getEmail()))
                 .toList();
     }
 
-    public UserResponse findUserById(Integer id) throws NotFoundException{
+    public UserResponse findUserById(Integer id) throws NotFoundException {
+
         UserEntity user = userRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Usuário não encontrado"));
 
