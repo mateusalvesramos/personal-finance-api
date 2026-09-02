@@ -121,7 +121,7 @@ The complete API documentation is available through Swagger UI:
 
 Swagger UI:
 ```text
-[http://localhost:8080](http://localhost:8080/swagger-ui/index.html)
+http://localhost:8080/swagger-ui/index.html
 ```
 <h2 id="contribute">🤝 Contribute</h2>
 
