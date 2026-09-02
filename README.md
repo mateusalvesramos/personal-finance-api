@@ -119,8 +119,10 @@ http://localhost:8080
 
 The complete API documentation is available through Swagger UI:
 
-<a href="http://localhost:8080/swagger-ui/index.html">Swagger UI</a>
-
+Swagger UI:
+```text
+[http://localhost:8080](http://localhost:8080/swagger-ui/index.html)
+```
 <h2 id="contribute">🤝 Contribute</h2>
 
 Contributions, suggestions and improvements are welcome.
