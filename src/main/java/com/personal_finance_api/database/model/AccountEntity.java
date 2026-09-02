@@ -5,6 +5,8 @@ import lombok.*;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "account")
@@ -31,5 +33,8 @@ public class AccountEntity {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
+
+    @OneToMany(mappedBy = "account", cascade = CascadeType.REMOVE)
+    private List<TransactionEntity> transactions = new ArrayList<>();
 
 }

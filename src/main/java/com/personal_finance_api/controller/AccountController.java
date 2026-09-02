@@ -47,7 +47,7 @@ public class AccountController {
     }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteAccount(@PathVariable("id") Integer id) throws NotFoundException {
 
         accountService.deleteAccount(id);

@@ -57,6 +57,8 @@ public class UserService {
         UserEntity user = userRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Usuário não encontrado"));
 
+
+
         userRepository.delete(user);
     }
 
